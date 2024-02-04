@@ -5,26 +5,25 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/png" href="slike/ideja.jpg">
- <script src="script.js"></script>
-
+<script src="script.js"></script>
 </head>
 <body>
-<div class="lev">
-<h1>Labirint</h1>
-</div>
+<div class="container">
 <div class="desni">
-<div>
-<img src="slike/zarnica.gif" class="gif" height="100">
-<div class="maze">
-                    <div class="ho">
-                        <canvas id="canvas" width="484px" height="484px">
+	<h1>Labirint</h1>
+</div>
+		<div class="levi">
+		<img src="slike/luc.jpg" class="luc">
+		<canvas id="canvas" class="maze" width="404px" height="405px">
                             <script>
                             drawMaze();
 							drawPath();
                             </script>
                         </canvas>
-                    </div>
-                </div>
+		<img src="slike/elec.jpg" class="ground">
+		</div>
+	
 
+</div>
 </body>
 </html>
