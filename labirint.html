@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Labirint</title>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="style.css">
-<link rel="icon" type="image/png" href="slike/ideja.jpg">
-<script src="script.js"></script>
+	<title>Labirint</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/png" href="slike/ideja.jpg">
+	<script src="script.js"></script>
 </head>
-<body>
-<div class="container">
-<div class="desni">
-	<h1>Labirint</h1>
-</div>
-		<div class="levi">
-		<img src="slike/luc.jpg" class="luc">
-		<canvas id="canvas" class="maze" width="404px" height="405px">
-                            <script>
-                            drawMaze();
-							drawPath();
-                            </script>
-                        </canvas>
-		<img src="slike/elec.jpg" class="ground">
+	<body>
+	<div class="container">
+	<div class="desni">
+		<h1>Labirint</h1>
+		<button class="gumb" onclick="drawPath();">Povezi</button>
+		<button class="gumb" id="gumb" onclick="erasePath();">Izbrisi</button>
+		<!--<img src="slike/switch.png" class="switch">(switch cez button in popravi dezajn, izbrisi path, luc dagori)-->
 		</div>
-	
+				<div class="levi">
+				<img src="slike/luc.png" class="luc">
+				<canvas id="canvas" class="maze" width="404px" height="405px">
+									<script>
+									drawMaze();
+									</script>
+								</canvas>
+				<img src="slike/elec.png" class="ground">
+				</div>
+			
 
-</div>
-</body>
+		</div>
+	</body>
 </html>

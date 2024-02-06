@@ -32,9 +32,9 @@ body {
     order: 2; 
 }
 	.luc{
-	margin-left:96%;
+	margin-left:92%;
 	height:150px;
-	width:100px;
+	width:150px;
 	}
 	
 	.maze{
@@ -49,4 +49,12 @@ body {
 @font-face {
   font-family: Bledek;
   src: url('font/Bledek.otf');
+}
+.gumb{
+  width: 150px;
+  height: 70px;
+  margin-top: 190px;
+  margin-right: 70px;
+  border-radius: 30px;
+  background-color: transparent;
 }

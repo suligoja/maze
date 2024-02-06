@@ -328,23 +328,44 @@
 function drawPath(){
 	var scaleFactor = 1.4;
   path = [
-[202,2],[202,10],[186,10],[186,26],[170,26],[170,10],[138,10],[138,42],[154,42],[154,122],[122,122],[122,90],[138,90],[138,74],[90,74],[90,42],[122,42],[122,10],[106,10],[106,26],[90,26],[90,10],[42,10],[42,26],[10,26],[10,42],[26,42],[26,58],[42,58],[42,74],[26,74],[26,106],[90,106],[90,154],[74,154],[74,170],[106,170],[106,154],[154,154],[154,138],[186,138],[186,154],[202,154],[202,202],[170,202],[170,218],[186,218],[186,234],[202,234],[202,250],[234,250],[234,266],[266,266],[266,282],[218,282],[218,298],[250,298],[250,314],[266,314],[266,298],[282,298],[282,314],[298,314],[298,298],[314,298],[314,314],[362,314],[362,330],[250,330],[250,362],[266,362],[266,378],[234,378],[234,394],[202,394],[202,402]
- ];
+[202, 2], [202, 10], [186, 10], [186, 26], [170, 26], [170, 10], [138, 10], [138, 42], [154, 42], [154, 122], [122, 122], [122, 90], [138, 90], [138, 74], [90, 74], [90, 42], [122, 42], [122, 10], [106, 10], [106, 26], [90, 26], [90, 10], [42, 10], [42, 26], [10, 26], [10, 42], [26, 42], [26, 58], [42, 58], [42, 74], [26, 74], [26, 106], [90, 106], [90, 154], [74, 154], [74, 170], [106, 170], [106, 154], [154, 154], [154, 138], [186, 138], [186, 154], [202, 154], [202, 202], [170, 202], [170, 218], [186, 218], [186, 234], [202, 234], [202, 250], [234, 250], [234, 266], [266, 266], [266, 282], [218, 282], [218, 298], [250, 298], [250, 314], [266, 314], [266, 298], [282, 298], [282, 314], [298, 314], [298, 298], [314, 298], [314, 314], [362, 314], [362, 330], [250, 330], [250, 362], [266, 362], [266, 378], [234, 378], [234, 394], [202, 394], [202, 402]
+    ];
  
- path = path.map(function(coordinate) {
-        return coordinate.map(function(value) {
+ path = path.map(function (coordinate) {
+        return coordinate.map(function (value) {
             return value * scaleFactor;
         });
     });
- 
-  const canvas = document.getElementById("canvas");
-  const ctx = canvas.getContext("2d");
-  for(i=0;i<path.length-1;i++){
-    ctx.beginPath();
-    ctx.moveTo(path[i][0],path[i][1]);
-    ctx.lineTo(path[i+1][0],path[i+1][1]);
-    ctx.lineWidth = 2;
-    ctx.strokeStyle ="white";
-    ctx.stroke();
-  }
+
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+
+    const drawDelay = 100; 
+	
+	path.reverse();
+	
+    for (let i = 0; i < path.length - 1; i++) {
+        setTimeout(() => {
+            ctx.beginPath();
+            ctx.moveTo(path[i][0], path[i][1]);
+            ctx.lineTo(path[i + 1][0], path[i + 1][1]);
+            ctx.lineWidth = 2;
+            ctx.strokeStyle = "white";
+            ctx.stroke();
+        }, i * drawDelay);
+    }
+	
+	function erasePathAnimation() {
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+    const eraseDelay = 80;
+
+    // Erase the path segments with animation
+    for (let i = 0; i < path.length - 1; i++) {
+        setTimeout(() => eraseLine(ctx, i, path), i * eraseDelay);
+    }
+}
+	
+const resetButton = document.getElementById("gumb");
+gumb.addEventListener("click", erasePathAnimation);
 }
