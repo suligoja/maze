@@ -28,7 +28,7 @@ body {
 .desni {
     flex: 1; 
     margin-top: 40px;
-	margin-left:65%;
+	margin-left:55%;
     order: 2; 
 }
 	.luc{
@@ -50,11 +50,29 @@ body {
   font-family: Bledek;
   src: url('font/Bledek.otf');
 }
-.gumb{
-  width: 150px;
-  height: 70px;
-  margin-top: 190px;
-  margin-right: 70px;
+.gumb1{
+  width: 50px;
+  height: 50px;
+  margin-top: 200px;
+  margin-left: -200px;
   border-radius: 30px;
   background-color: transparent;
+  border-color: transparent;
+}
+.gumb2{
+  width: 50px;
+  height: 50px;
+  margin-top: 40px;
+  margin-left: -200px;
+  border-radius: 30px;
+  background-color: transparent;
+  border-color: transparent;
+}
+.switch{
+  width: 350px;
+  height: 370px;
+  margin-top: 90px;
+  margin-left: -190px;
+  float:left;
+  
 }

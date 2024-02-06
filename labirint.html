@@ -6,17 +6,19 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" type="image/png" href="slike/ideja.jpg">
 	<script src="script.js"></script>
+	
 </head>
 	<body>
 	<div class="container">
 	<div class="desni">
 		<h1>Labirint</h1>
-		<button class="gumb" onclick="drawPath();">Povezi</button>
-		<button class="gumb" id="gumb" onclick="erasePath();">Izbrisi</button>
+		<img src="slike/switch.png" class="switch">
+		<button class="gumb1" id="red" onclick="drawPath();"></button><br>
+		<button class="gumb2" id="yellow" onclick="erasePath();"></button>
 		<!--<img src="slike/switch.png" class="switch">(switch cez button in popravi dezajn, izbrisi path, luc dagori)-->
 		</div>
-				<div class="levi">
-				<img src="slike/luc.png" class="luc">
+				<div class="levi">	
+				<img src="slike/luc.png" class="luc" id="luc">
 				<canvas id="canvas" class="maze" width="404px" height="405px">
 									<script>
 									drawMaze();
