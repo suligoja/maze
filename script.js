@@ -362,9 +362,11 @@ function changeImage() {
     const zarnicaImage = document.getElementById("luc");
      
     zarnicaImage.style.height = "150px";
-    zarnicaImage.style.width = "150px";
+    zarnicaImage.style.width = "135px";
+	zarnicaImage.style.marginLeft = "38%";
 	zarnicaImage.src = "slike/zarnica.png";
 }
+
 
 }
 
@@ -392,7 +394,7 @@ function erasePath() {
             ctx.beginPath();
             ctx.moveTo(path[i][0], path[i][1]);
             ctx.lineTo(path[i + 1][0], path[i + 1][1]);
-            ctx.lineWidth = 3;
+            ctx.lineWidth = 4;
             ctx.strokeStyle = "yellow"; 
             ctx.stroke();
         if (i === path.length - 2) {
@@ -404,6 +406,10 @@ function erasePath() {
 
 function changeImage() {
     const lucImage = document.getElementById("luc");
+
+	lucImage.style.height = "150px";
+    lucImage.style.width = "150px";
+	lucImage.style.marginLeft = "37%";
     lucImage.src = "slike/luc.png";
 }
 }

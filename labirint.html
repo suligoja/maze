@@ -10,21 +10,27 @@
 </head>
 	<body>
 	<div class="container">
+
+	<div class="levi">	
+		<img src="slike/luc.png" class="luc" id="luc"><br>
+		<canvas id="canvas" class="maze" width="404" height="405">
+				<script>
+				drawMaze();
+				</script>
+				</canvas><br>
+		<img src="slike/elec.png" class="ground">
+	</div>
+				
+					<div class="sredina">	
+							<img src="slike/switch.png" class="switch">
+					<button class="gumb1" id="red" onclick="drawPath();"></button><br>
+					<button class="gumb2" id="yellow" onclick="erasePath();"></button>
+					
+					</div>
+					
 	<div class="desni">
 		<h1>Labirint</h1>
-		<img src="slike/switch.png" class="switch">
-		<button class="gumb1" id="red" onclick="drawPath();"></button><br>
-		<button class="gumb2" id="yellow" onclick="erasePath();"></button>
-		</div>
-				<div class="levi">	
-				<img src="slike/luc.png" class="luc" id="luc">
-				<canvas id="canvas" class="maze" width="404px" height="405px">
-									<script>
-									drawMaze();
-									</script>
-								</canvas>
-				<img src="slike/elec.png" class="ground">
-				</div>
+	</div>
 			
 
 		</div>
