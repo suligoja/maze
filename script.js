@@ -445,7 +445,7 @@ function erasePath() {
             ctx.moveTo(path[i][0], path[i][1]);
             ctx.lineTo(path[i + 1][0], path[i + 1][1]);
             ctx.lineWidth = 4;
-            ctx.strokeStyle = "yellow"; 
+            ctx.strokeStyle = "rgba(229, 229, 1)"; 
             ctx.stroke();
         if (i === path.length - 2) {
                 changeImage();
@@ -467,7 +467,4 @@ function changeImage() {
 
 const resetButton = document.getElementById("yellow");
 resetButton.addEventListener("click", erasePath);
-
-
-
 

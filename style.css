@@ -81,10 +81,12 @@ body {
   width: 80px;
   height: 80px;
   border:2px solid black;
-  margin-left: 68%;
-  margin-top: 38%;
+  margin-left: 85%;
+  margin-top: 25%;
   border-radius: 60px;
   background-color: transparent;
+  position:relative;
+  z-index:2;
   border-color: transparent;
 }
 .switch{
@@ -102,7 +104,10 @@ body {
 .moz{
 	width: 421px;
 	height: 545px;
-	margin-right: -8%;
-	margin-top: -30%;
-	float:right;
+	bottom: 55px;
+	right: 0;
+	position: fixed;
+}
+.maze{
+	background:rgba(0,0,0,0.1);
 }
