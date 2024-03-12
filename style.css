@@ -44,8 +44,8 @@ body {
 }
 .desni {
     flex: 0 0 auto; 
-    margin-top: 40px;
-	margin-left: 5px;
+    margin-top: 35%;
+	margin-left: 25%;
     order: 3;
 }
 	.luc{
@@ -63,8 +63,8 @@ body {
 .gumb1{
   width: 30px;
   height: 30px;
-  margin-top: 140px;
-  margin-left: -165px;
+  margin-top: 195%;
+  margin-left: -122px;
   background-color: transparent;
   border-color: transparent;
  
@@ -72,7 +72,7 @@ body {
 .gumb2{
   width: 30px;
   height: 30px;
-  margin-left: -165px;
+  margin-left: -122px;
   background-color: transparent;
   border-color: transparent;
   
@@ -81,8 +81,8 @@ body {
   width: 80px;
   height: 80px;
   border:2px solid black;
-  margin-left: 31%;
-  margin-top: 29%;
+  margin-left: 68%;
+  margin-top: 38%;
   border-radius: 60px;
   background-color: transparent;
   border-color: transparent;
@@ -90,8 +90,19 @@ body {
 .switch{
   width: 213px;
   height: 170px;
-  margin-top: 90px;
-  margin-left: -120%;
+  margin-top: 170%;
+  margin-left: -30%;
   float:left;
   
+}
+.zoom{
+    display: flex; 
+	justify-content: space-around;
+}
+.moz{
+	width: 421px;
+	height: 545px;
+	margin-right: -8%;
+	margin-top: -30%;
+	float:right;
 }
