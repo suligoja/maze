@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" type="image/png" href="slike/ideja.jpg">
 	<script src="script.js"></script>
+	<script src="maze.js"></script>
 	
 	<<link rel="stylesheet href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.3/dist/sweetalert2.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.3/dist/sweetalert2.all.min.js"></script>
@@ -14,27 +15,33 @@
 	<div class="container">
 	<div class="zoom">
 
-	<div class="levi">	
+
+					<div class="levi">	
+							<img src="slike/switch1.png" class="switch" id="switch">
+					<button class="gumb1" id="yellow" onclick="drawPath();"></button><br>
+					<button class="gumb2" id="black" onclick="erasePath();"></button>
+					
+					</div>
+
+	<div>
+	<img src="slike/omarica.png" class="omarica darken" id="omarica">	
+	<div class="sredina">	
 		<img src="slike/luc.png" class="luc" id="luc"><br>
 		<canvas id="canvas" class="maze" width="404" height="405">
 				<script>
 				drawMaze();
 				</script>
 				</canvas><br>
-		<img src="slike/elec.png" class="ground">
+		<img src="slike/elec.png" class="ground darken" id="ground">
 	</div>
-				
-					<div class="sredina">	
-							<img src="slike/switch1.png" class="switch" id="switch">
-					<button class="gumb1" id="red" onclick="drawPath();"></button><br>
-					<button class="gumb2" id="yellow" onclick="erasePath();"></button>
-					
-					</div>
+	</div>
+								
 					
 	<div class="desni">
-		<h1>Labirint</h1>
+		<h1>Elektricne<br>instalacije</h1>
+		<img src="slike/plakat.png" class="plakat darken" id="plakat">
 		<button class="gumb3" id="salert" onclick="salert();"></button>
-		<img src="slike/moz.png" class="moz">
+		
 	</div>
 			
 

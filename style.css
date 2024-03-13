@@ -12,17 +12,22 @@ html, body{
 }
 body {
 	font-family: 'Bledek'; 
-	background:url(slike/background.jpg) no-repeat;
+	background:url(slike/blackwall.jpg) no-repeat;
 	background-size: cover;
 	}
+.new-background {
+    background: url(slike/wall.jpg) no-repeat;
+    background-size: cover;
+}
 	h1 {
-	  font-family: 'Bledek'; 
-	  letter-spacing: 2px;
-	  margin-top:-70%;
-	  margin-left:-90%;
-	  font-size:150px;
-	  
-	}
+    font-family: 'Bledek'; 
+    letter-spacing: 2px;
+    margin-top: 85%;
+    margin-left: 240%;
+    font-size: 40px;
+	position: relative;
+    z-index: 2;
+}
 .container {
     display: flex; 
 	justify-content: space-around;
@@ -32,7 +37,7 @@ body {
 .levi {
     flex: 0 0 auto; 
     margin-top: 40px;
-	margin-left: 10%;
+	margin-left: -21%;
     order: 1;
     
 }
@@ -48,23 +53,36 @@ body {
 	margin-left: 25%;
     order: 3;
 }
-	.luc{
-	margin-left: 37%;
-	height:150px;
-	width:150px;
-	}
+	.luc {
+    margin-left: 28.5%;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    z-index: 2;
+}
 
-	.ground{
-	margin-left: 45%;
-	height:121px;
-	width:60px;
-	}
+.omarica {
+    margin-left: -8%;
+    margin-top: 2%;
+    height: 800px;
+    width: 1260px;
+    position: absolute;
+    z-index: 1;
+}
+
+.ground {
+    margin-left: 37.5%;
+    height: 121px;
+    width: 60px;
+    position: relative;
+    z-index: 3;
+}
 
 .gumb1{
   width: 30px;
   height: 30px;
-  margin-top: 195%;
-  margin-left: -122px;
+  margin-top: 173%;
+  margin-left: -232%;
   background-color: transparent;
   border-color: transparent;
  
@@ -72,28 +90,28 @@ body {
 .gumb2{
   width: 30px;
   height: 30px;
-  margin-left: -122px;
-  background-color: transparent;
+  margin-left: -232%;
+  background-color:transparent;
   border-color: transparent;
   
 }
 .gumb3{
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border:2px solid black;
-  margin-left: 85%;
-  margin-top: 25%;
   border-radius: 60px;
   background-color: transparent;
-  position:relative;
-  z-index:2;
   border-color: transparent;
+  position: relative;
+  z-index: 2;
+  margin-left: 170%;
+  top: -12%;
 }
 .switch{
   width: 213px;
   height: 170px;
-  margin-top: 170%;
-  margin-left: -30%;
+  margin-top: 150%;
+  margin-left: -270%;
   float:left;
   
 }
@@ -101,13 +119,21 @@ body {
     display: flex; 
 	justify-content: space-around;
 }
-.moz{
-	width: 421px;
-	height: 545px;
-	bottom: 55px;
-	right: 0;
-	position: fixed;
+.plakat {
+    width: 321px;
+    height: 445px;
+    z-index: 1;
+    position: absolute;
+    top: 35%; 
+    right: 4%;	
 }
 .maze{
-	background:rgba(0,0,0,0.1);
+	background:rgba(0,0,0,0.8);
+	margin-left: -10%;
+}
+.darken {
+    filter: brightness(0.5);
+}
+.brighten {
+    filter: brightness(1);
 }
