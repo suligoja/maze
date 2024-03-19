@@ -6,6 +6,10 @@
   font-family: Bledek;
   src: url('font/Bledek.otf');
 }
+@font-face {
+  font-family: roboc;
+  src: url('font/Roboc.otf');
+}
 html, body{
 	width: 100%;
 	height: 100%;
@@ -20,12 +24,12 @@ body {
     background-size: cover;
 }
 	h1 {
-    font-family: 'Bledek'; 
+    font-family: 'roboc'; 
     letter-spacing: 2px;
     font-size: 40px;
 	position: relative;
     z-index: 2;
-	left:190px;
+	left:170px;
     top:45px;
 }
 .container {

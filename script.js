@@ -24,7 +24,7 @@ function salert() {
 		  event.preventDefault();
     Swal.fire({
         position: 'center-center',
-        icon: 'info',
+        iconHtml: '<span style="font-family: Bledek;">i</span>',
         title: 'Anej Šuligoj, 4.Ra,<br>leto: 2023/24,<br>mentor: Boštjan Vouk.',
         showConfirmButton: false,
         timer: 5500
@@ -32,7 +32,8 @@ function salert() {
 	
 	Swal.getPopup().style.backgroundColor = 'rgb(242, 236, 79)';
     Swal.getTitle().style.color = 'rgb(51, 51, 2)';
-    Swal.getTitle().style.fontFamily = 'display'; 
+    Swal.getTitle().style.fontFamily = 'roboc';
+	Swal.getTitle().style.letterSpacing = '2px';
 }
 
 
