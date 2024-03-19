@@ -22,39 +22,50 @@ body {
 	h1 {
     font-family: 'Bledek'; 
     letter-spacing: 2px;
-    margin-top: 85%;
-    margin-left: 240%;
     font-size: 40px;
 	position: relative;
     z-index: 2;
+	left:190px;
+    top:45px;
 }
 .container {
     display: flex; 
 	justify-content: space-around;
     align-items: center; 
 }
-
+.zoom{
+    display: flex; 
+	justify-content: space-around;
+	width: auto;
+}
 .levi {
     flex: 0 0 auto; 
     margin-top: 40px;
-	margin-left: -21%;
-    order: 1;
-    
+	left: 250px;
+    order: 0;
+	width:200px;
 }
 .sredina {
     flex: 0 0 auto; 
     margin-top: 40px;
 	margin-left: 5%;
     order: 2;
+	width:1000px;
 }
 .desni {
     flex: 0 0 auto; 
-    margin-top: 35%;
-	margin-left: 25%;
     order: 3;
+	width:400px;
+	margin-left:2%;
+}
+.vplakatu {
+	width:200px;
+	position: relative;
+	left:5%;
+	top:48%;
 }
 	.luc {
-    margin-left: 28.5%;
+    margin-left: 20.5%;
     height: 150px;
     width: 150px;
     position: relative;
@@ -62,7 +73,7 @@ body {
 }
 
 .omarica {
-    margin-left: -8%;
+    margin-left: -4%;
     margin-top: 2%;
     height: 800px;
     width: 1260px;
@@ -71,7 +82,7 @@ body {
 }
 
 .ground {
-    margin-left: 37.5%;
+    margin-left: 25.5%;
     height: 121px;
     width: 60px;
     position: relative;
@@ -81,55 +92,53 @@ body {
 .gumb1{
   width: 30px;
   height: 30px;
-  margin-top: 173%;
-  margin-left: -232%;
-  background-color: transparent;
+  left: 95px;
+  top: -116px;
+  background-color:  transparent;
   border-color: transparent;
- 
+  position: relative;
 }
 .gumb2{
   width: 30px;
   height: 30px;
-  margin-left: -232%;
-  background-color:transparent;
+  left: 95px;
+  top: -116px;
+  background-color: transparent;
   border-color: transparent;
-  
+  position: relative;
 }
 .gumb3{
   width: 60px;
   height: 60px;
   border:2px solid black;
   border-radius: 60px;
-  background-color: transparent;
+  background-color:  transparent;
   border-color: transparent;
   position: relative;
   z-index: 2;
-  margin-left: 170%;
-  top: -12%;
+  left:95px;
+  top:-5px;
 }
 .switch{
   width: 213px;
   height: 170px;
   margin-top: 150%;
-  margin-left: -270%;
+  margin-left: 2%;
   float:left;
-  
+ 
 }
-.zoom{
-    display: flex; 
-	justify-content: space-around;
-}
+
 .plakat {
     width: 321px;
     height: 445px;
     z-index: 1;
-    position: absolute;
-    top: 35%; 
-    right: 4%;	
+    position: relative;
+	left:50px;
+	top:150px;
+	
 }
 .maze{
 	background:rgba(0,0,0,0.8);
-	margin-left: -10%;
 }
 .darken {
     filter: brightness(0.5);

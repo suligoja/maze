@@ -25,7 +25,7 @@ function salert() {
     Swal.fire({
         position: 'center-center',
         icon: 'info',
-        title: 'Anej Šuligoj, 4.Ra,<br>leto:2023/24,<br>mentor:Boštjan Vouk.',
+        title: 'Anej Šuligoj, 4.Ra,<br>leto: 2023/24,<br>mentor: Boštjan Vouk.',
         showConfirmButton: false,
         timer: 5500
     });
@@ -78,7 +78,7 @@ function changeImage() {
 	
     zarnicaImage.style.height = "185px";
     zarnicaImage.style.width = "160px";
-	zarnicaImage.style.marginLeft = "27.5%";
+	zarnicaImage.style.marginLeft = "20%";
 	zarnicaImage.style.marginTop = "-35px";
 	zarnicaImage.src = "slike/zarnica1.png";
 	playAudio2();
@@ -139,7 +139,7 @@ function changeImage1() {
 
     lucImage.style.height = "150px";
     lucImage.style.width = "150px";
-    lucImage.style.marginLeft = "28.5%";
+    lucImage.style.marginLeft = "20.5%";
     lucImage.style.marginTop = "0px";
     lucImage.src = "slike/luc.png";
     playAudio3();
@@ -160,16 +160,3 @@ drawButton.addEventListener("click", drawPath);
 const resetButton = document.getElementById("black");
 resetButton.addEventListener("click", erasePath);
 
-/*const sparkImage = new Image();
-    sparkImage.onload = function() {
-        for (let i = 0; i < path.length - 1; i++) {
-            setTimeout(() => {
-                ctx.drawImage(sparkImage, path[i][0] - 10, path[i][1] - 10, 20, 20); 
-				if (i === path.length - 2) {
-                changeImage();
-            }
-            }, i * drawDelay);
-        }
-    };
-    sparkImage.src = "slike/spark.png"; 
-	*/
